@@ -1,6 +1,3 @@
-# import sys
-# input = sys.stdin.readline()
-
 # 참가자 수, 지민, 한수 순서
 n, a, b = map(int, input().split())
 cnt=0
