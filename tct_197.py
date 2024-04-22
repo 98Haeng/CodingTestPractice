@@ -1,3 +1,4 @@
+### 이진탐색을 이용한 풀이
 # 부품 개수
 n = int(input())
 # 부품 목록
@@ -24,5 +25,21 @@ for i in ar2:
     result = binary_search(ar1, i, 0, n-1)
     if result != None:
         print('yes', end = ' ')
+    else:
+        print('no', end = ' ')
+
+## 다른 방법 (set 활용)
+        
+n = int(input())
+# 부품 목록
+ar1 = set(map(int, input().split()))
+# 찾고자 하는 개수
+m = int(input())
+# 부품 목록
+ar2 = list(map(int, input().split()))
+
+for i in ar2:
+    if i in ar1:
+        print('yes', end= ' ' )
     else:
         print('no', end = ' ')
